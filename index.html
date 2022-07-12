@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gadget Zone</title>
+  <script src="script.js">
+  </script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("UzzQ2leRPfvrvo4Tk");
+    })();
+  </script>
+</head>
+
+<body>
+  <!--right-->
+  <section id="right-side">
+    <div class ="ls_container">
+      <div class="image-container">
+        <div class="images">
+          <a href="https://www.facebook.com/Solaristechh/"><img src = "fb.png"></a>
+        </div>
+        <div class="images">
+          <a href="https://twitter.com/Solaristech2"><img src = "twitter.png"></a>
+        </div>
+        <div class="images">
+          <a href="https://www.instagram.com/solaristech22/"><img src = "ig.png"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <img src="logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <div class="list">
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#popular" data-after="About">About</a></li>
+              <li><a href="#about">PRODUCTS</a></li>
+              <li><a href="#contact" data-after="Contact">OUR TEAM</a></li>
+            </ul>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>THE PHILIPPINE <span></span></h1>
+        <h1>SOLAR POWER PROVIDER <span></span></h1>
+        <p>
+          <br>
+          <h2>
+            &nbsp;For&nbsp; too&nbsp; long&nbsp; the&nbsp; country&nbsp; has&nbsp; been&nbsp; hindered&nbsp; by&nbsp; expensive&nbsp; and&nbsp; low
+            <br>&nbsp;quality&nbsp; power&nbsp; supply,&nbsp; &nbsp;but&nbsp; &nbsp;now,&nbsp; &nbsp;through&nbsp; &nbsp;the&nbsp; &nbsp;concept&nbsp; &nbsp;of&nbsp; distributed 
+            <br>&nbsp;generation,&nbsp; individuals&nbsp; and&nbsp; industry&nbsp; alike&nbsp; can relieve this burden with a
+            <br>
+          </h2>  
+        </p>
+        <a href="#products" type="button" class="cta">INQUIRE NOW</a>
+      </div>
+    </div>
+  </section>
+  <!-- Popular Section  -->
+    <section id ="popular">
+	    <div class="popular-container">
+            <img src="https://i.pinimg.com/564x/59/6c/b5/596cb5253556f82b1e1fab5d37295aaf.jpg">
+            <div class="popular-context">
+              <div class ="popular-description">
+                      <div class="about-desc">
+                        <span>
+                        <strong>ABOUT US</strong>
+                        <br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#fbb040;">Solaris Tech&nbsp; </span>is revolutionizing the Renewable Energy in the Philippines.
+                        <br>
+                        We create energy solutions across the nation and aim to sustain a brighter &nbsp;future&nbsp;&nbsp; through&nbsp; building&nbsp; dependable,&nbsp; affordable,&nbsp; and&nbsp; world-class&nbsp; solar
+                        <br>
+                        -powered systems.
+                        </span>
+                      </div>
+                      <div class="engr-desc">
+                        <span>
+                        <strong>WHAT WE DO</strong>
+                        <br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engineering Excellence is what makes us stand out in the industry. We 
+                        <br>
+                        offer world-class services to identify and solve complex problems.
+                        <br>
+                        <br>
+                        <ul>
+                            <li>Grid-tied Solar Power System</li>
+                            <li>Off-grid Solar Power System</li>
+                            <li>Design Review Services</li>
+                            <li>System Monitoring</li>
+                        </ul>
+                        </span>
+                      </div>
+                </div>
+              </div>
+      </div>
+    </section>
+    <!---Mission/Vision Section--->
+    <section id ="mission_vision">
+      <div class="mvcontainer">
+        <div class="mvcontent">
+          <img src="mv.jpg">
+          <div class="mvcontext">
+            <p>
+              <span class ="mv_mission">MISSION</span>
+              <br>
+              <br>
+              Foster sustainable development and build a world class portfolio of renewable 
+              <br>
+              energy assets and systems for future generations through leading the energy 
+              <br>
+              transition by providing innovative solutions to our customers.
+            </p>
+            <p>
+              <span class ="mv_mission">VISION</span>
+              <br>
+              <br>
+              Our vision is to be the trusted advocate for sustainable and equitable solar 
+              <br>
+              energy system that directs control and benefits back to local communities, with 
+              <br>
+              high customer satisfaction, at a low cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- About Section -->
+  <section id ="inquiry_form">
+    <div  class="form_container"  id ="form" >
+      <div id="form-c" class="form_content">
+          <div class ="forms">
+            <div>
+              <input type="text" id="senderMail" value="solaristech2022@gmail.com" style="display: none">
+              <label>First name: </label>
+              <input type="text" id="Fname" placeholder="Ex. Juan" class="txtbox">
+            </div>
+            <label>Last name: </label>
+            <input type="text" id="Lname" placeholder="Ex. Dela Cruz" class="txtbox">
+            <br>
+            <label>Address: </label>
+            <input type="text" id="Add"  placeholder="Ex. 109 Celestino St., Sta. Maria, Bulacan" class="txtbox">
+            <br>
+            <label>Email: </label>
+            <input type="text" id="email"  placeholder="Ex. juandelacruz@gmail.com" class="txtbox">
+            <br>
+            <label>Contact number: </label>
+            <input type="text" id="contact" placeholder="Ex. 09123456789" class="txtbox">
+            <br>
+            <label>Package: </label>
+            <select id="selection">
+            </select>
+            <div class="submit_form" >
+              <a onclick="form1_hide()">Schedule Now</a>
+            </div>
+            <dvi class ="cancel_form">
+              <a onclick="form_hide()">X</a>
+            </dvi>
+          </div>
+        </div>
+        <div class="bye_container" id="bye">
+          <img src="dew.png">
+          <br>
+          Thankyou! We'll reach out to you shortly.
+        </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about-container">
+      <div class="about-product">
+        <div class="first">
+          <div class="title">
+            1KW Solar PV System                
+          </div>
+          <div class="sub-title">
+            Package Price: P90,000.00
+            <br>
+            (Ideal for electricity bills of between P4,000 and below / month)
+          </div>
+          <div class ="first-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Estimated annual savings of &nbsp;&nbsp;&nbsp;P16,800.00
+            </p>
+          </div>
+          <div class ="second-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Includes panels, inverter, standard &nbsp;&nbsp;&nbsp;mounting, and installation.
+            </p>
+          </div>
+          <div class ="third-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Price only applies to installations &nbsp;&nbsp;&nbsp;within Bulacan. Additional shipping &nbsp;&nbsp;&nbsp;cost for installations outside Bulacan.
+            </p>
+          </div>
+          <div class ="fourth-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Does not include Net Metering.
+            </p>
+          </div>
+          <div class ="fifth-content">
+            <button onclick="form_show(1);">
+              INQUIRE NOW
+            </button>
+          </div>
+        </div>
+        <div class="second">
+          <div class="title">
+            2KW Solar PV System                
+          </div>
+          <div class="sub-title">
+            Package Price: P171,000.00
+            <br>
+            (Ideal for electricity bills of between P4,000 – P6,000 / month)
+          </div>
+          <div class ="first-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Estimated annual savings of &nbsp;&nbsp;&nbsp;P33,600.00
+            </p>
+          </div>
+          <div class ="second-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Includes panels, inverter, standard &nbsp;&nbsp;&nbsp;mounting, and installation.
+            </p>
+          </div>
+          <div class ="third-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Price only applies to installations &nbsp;&nbsp;&nbsp;within Bulacan. Additional shipping &nbsp;&nbsp;&nbsp;cost for installations outside Bulacan.
+            </p>
+          </div>
+          <div class ="fourth-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Does not include Net Metering.
+            </p>
+          </div>
+          <div class ="fifth-content">
+            <button onclick="form_show(2)">
+              INQUIRE NOW
+            </button>
+          </div>
+        </div>
+        <div class="third">
+          <div class="title">
+            3KW Solar PV System                
+          </div>
+          <div class="sub-title">
+            Package Price: P231,500.00
+            <br>
+            (Ideal for electricity bills of between P4,000 and below / month)
+          </div>
+          <div class ="first-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Estimated annual savings of &nbsp;&nbsp;&nbsp;P50,400.00
+            </p>
+          </div>
+          <div class ="second-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Includes panels, inverter, standard &nbsp;&nbsp;&nbsp;mounting, and installation.
+            </p>
+          </div>
+          <div class ="third-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Price only applies to installations &nbsp;&nbsp;&nbsp;within Bulacan. Additional shipping &nbsp;&nbsp;&nbsp;cost for installations outside Bulacan.
+            </p>
+          </div>
+          <div class ="fourth-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Does not include Net Metering.
+            </p>
+          </div>
+          <div class ="fifth-content">
+            <button onclick="form_show(3)">
+              INQUIRE NOW
+            </button>
+          </div>
+        </div>
+        <div class="fourth">
+          <div class="title">
+            5KW Solar PV System                
+          </div>
+          <div class="sub-title">
+            Package Price: P365,000.00
+            <br>
+            (Ideal for electricity bills of between P4,000 and below / month)
+          </div>
+          <div class ="first-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Estimated annual savings of &nbsp;&nbsp;&nbsp;P84,000.00
+            </p>
+          </div>
+          <div class ="second-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Includes panels, inverter, standard &nbsp;&nbsp;&nbsp;mounting, and installation.
+            </p>
+          </div>
+          <div class ="third-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Price only applies to installations &nbsp;&nbsp;&nbsp;within Bulacan. Additional shipping &nbsp;&nbsp;&nbsp;cost for installations outside Bulacan.
+            </p>
+          </div>
+          <div class ="fourth-content">
+            <p>
+              &nbsp;&nbsp;&nbsp;Does not include Net Metering.
+            </p>
+          </div>
+          <div class ="fifth-content">
+            <button onclick="form_show(4)">
+              INQUIRE NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+639 123 456 789</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email:</h1>
+            <h2>gadgetzone@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address:</h1>
+            <h2>Sta. Maria, Bulacan</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+ 
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>G</span>adget <span>Z</span>one</h1>
+      </div>
+      <h2>Brings you closer to what you love.</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © Gadget Zone. All rights reserved.</p>
+    </div>
+  </section>
+ 
+</body>
+
+</html>
