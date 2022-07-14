@@ -1,3 +1,8 @@
+body {
+	--bs-body-font-family: var(--bs-font-monospace);
+	--bs-body-line-height: 1.4;
+	--bs-body-bg: var(--bs-gray-100);
+  }  
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 * {
 	padding: 0;
@@ -296,11 +301,18 @@ p {
 	position: relative;
 	height: 970px;
 }
-#popular .popular-container img{
+#popular .popular-container video{
 	height: 100%;
-	width: 800px;
+	width: 600px;
 	object-fit: cover;
 	object-position: left;
+}
+#popular .popular-context img{
+	float: left;
+	position: absolute;
+	z-index: 2;
+	left: 110px;
+	top: 300px;
 }
 #popular .popular-context{
 	position: absolute;
@@ -308,14 +320,33 @@ p {
 	right: 0px;
 	z-index: 1;
 	background-color: #141414;
-	width: 1300px;
+	width: 100%;
 	height: 100%;
 }
+
+#popular .popular-context .videoPlatform{
+	width: 500px;
+	height: 500px;
+	background-color: black;
+	position: absolute;
+	z-index: 999;
+	top: 0px;
+
+}
+#popular .videoPlatform {
+	position: absolute;
+	top: 0px;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+}
 #popular .popular-description {
-	position: relative;
+	position: absolute;
+	top: 0px;
 	margin-top: 170px;
 	font-size: 3rem;
-	margin-left: 10rem;
+	margin-left: 70rem;
 }
 #popular .popular-description span{
 	color: white;
@@ -615,6 +646,90 @@ p {
 	color: white;
 }
 
+
+
+/* contact  */
+.contact-container{
+	position: relative;
+	height: 970px;
+}
+.contact-container .image-container1{
+	position: absolute;
+	height: 350px;
+	left: 130px;
+	top: 150px;
+	width: 1500px;
+}
+.contact-container .image-container2{
+	position: absolute;
+	height: 350px;
+	left: 300px;
+	top: 550px;
+	width: 1200px;
+}
+
+.contact-container .image-container1 div,
+.contact-container .image-container2 div{
+	margin-left: 110px;
+	display: inline-block;
+}
+.contact-container .image-container1 div img,
+.contact-container .image-container2 div img{
+	object-fit: cover;
+	border-radius: 100%;
+	width: 250px;
+}
+.contact-container .image-container1 .m1-description .name ,
+.contact-container .image-container2 .m1-description .name {
+	font-size: 2rem;
+
+}
+.contact-container .image-container1 .m1-description #Td{
+	margin-left: -10px;
+}
+.contact-container .image-container1 .m1-description #Jn{
+	margin-left: 10px;
+}
+.contact-container .image-container1 .m1-description #Jd{
+	margin-left: -10px;
+}
+.contact-container .image-container1 .m1-description #Mn{
+	margin-left: -20px;
+}
+.contact-container .image-container1 .m1-description #Md{
+	margin-left: -50px;
+}
+.contact-container .image-container2 .m1-description #An{
+	margin-left: -50px;
+}
+.contact-container .image-container2 .m1-description #Ad{
+	margin-left: -70px;
+}
+.contact-container .image-container2 .m1-description #Rd{
+	margin-left: 5px;
+}
+.contact-container .image-container2 .m1-description #In{
+	margin-left: 15px;
+}
+.contact-container .image-container2 .m1-description #Id{
+	margin-left: 9px;
+}
+.contact-container .image-container1 .m1-description{
+	display: inline-block;
+	position: absolute;
+	bottom: 20px;
+	margin-left: -200px;
+}
+.contact-container .image-container2 .m1-description{
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	margin-left: -200px;
+}
+.contact-container .image-container1 .m1-description .dulot,
+.contact-container .image-container2 .m1-description .dulot{
+	margin-left: -50px;
+}
 /* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -770,31 +885,6 @@ p {
 		text-align: left;
 	}
 	/* End About */
-
-	/* contact  */
-	#contact .contact {
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		min-width: 20vh;
-		background-color: hsla(89, 43%, 51%, 0.3);
-	}
-	
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-	}
-	
-	#contact .contact-item .icon {
-		height: 75px;
-		width: 75px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
 }
 
 

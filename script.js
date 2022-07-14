@@ -132,3 +132,5 @@
               console.log("Sucess", res.status)
           })
       }
+      function playVid() {
+      } 
